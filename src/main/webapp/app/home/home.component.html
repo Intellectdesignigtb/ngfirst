@@ -1,0 +1,27 @@
+<clr-header class="headerProp">
+  <div class="branding">
+     <a href="/home" class="nav-link"> <span
+        class="clr-icon clr-clarity-logo"></span> <span class="title">Intellect
+     Liquidity</span>
+     </a>
+  </div>
+</clr-header>
+<nav class="subnav" [clr-nav-level]="1">
+  <sub-nav (out) = "sideNav($event)"></sub-nav>
+</nav>
+<div class="content-container">
+  <ng-container *ngIf="sideNavFlag">
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <side-nav [maintenanceFlag]="maintenanceFlag"
+          [refDataFlag]="refDataFlag" (out)="bodyFunction($event)">
+        </side-nav>
+      </section>
+    </nav>
+  </ng-container>
+  <ng-container *ngIf="bodyFlag">
+    <div class="content-area">
+      <cashCoreApp-legal-entity [legalEntityCreateFlag]="legalEntityCreateFlag"></cashCoreApp-legal-entity>
+    </div>
+  </ng-container>
+</div>

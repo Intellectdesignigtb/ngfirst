@@ -1,0 +1,24 @@
+<ng-container *ngIf="refDataFlag">  
+  <clr-tree-node>
+    Core 
+    <ng-template [clrIfExpanded]="true">
+       <clr-tree-node> <span class="nav-text"><button
+          class="btn btn-link" id="core" (click)="bodyFunction($event)">Core</button></span></clr-tree-node>
+       <clr-tree-node>
+          Legal Entity 
+          <ng-template [clrIfExpanded]="true">
+             <clr-tree-node>
+                <span class="nav-text"><button class="btn btn-link" id="createNewLE" (click)="bodyFunction($event)">
+                  Create New</button></span>
+             </clr-tree-node>
+             <clr-tree-node> <span class="nav-text"><button
+                class="btn btn-link" id="modifyLE" (click)="bodyFunction($event)">Modify</button></span>
+              </clr-tree-node>
+          </ng-template>
+       </clr-tree-node>
+    </ng-template>
+  </clr-tree-node>
+</ng-container>
+<ng-container *ngIf="maintenanceFlag">
+  Maintenance side nav data goes here.
+</ng-container>

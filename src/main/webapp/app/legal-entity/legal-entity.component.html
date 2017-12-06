@@ -1,0 +1,197 @@
+<clr-header class="headerProp">
+    <div class="branding">
+       <span class="title">Bank Legal Entity</span>
+    </div>
+ </clr-header>
+ <ng-container *ngIf="legalEntityCreateFlag">
+    <h4>Create Bank Legal Entity</h4>
+    <p></p>
+    <clr-tabs>
+        <clr-tab>
+           <button clrTabLink id="link1">Bank Legal Entity</button>
+           <clr-tab-content id="content1" *clrIfActive>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Code <font color="Red">*</font></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35" [(ngModel)]="entityCode"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Name <font color="Red">*</font></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35" [(ngModel)]="entityName"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Address1 <font color="Red">*</font></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35" [(ngModel)]="entityAddress1"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Address2</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Address3</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Address4</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>City/Town</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>State</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Country <font color="Red">*</font></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Pin/Zip/Post Code</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Primary Phone <font color="Red">*</font></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Alternate Phone</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Primary Fax</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Alternate Fax</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Primary Cell Phone</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Alternate Cell Phone</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Primary Email</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+                 <div class="col-sm-12 col-md-2">
+                    <span>Alternate Email</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"> </span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Website</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+              </div>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-2">
+                    <span>Message</span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><input type="text" size="35"></span>
+                 </div>
+              </div>
+              <p></p>
+              <font size="2" color="Red">* indicates mandatory field</font>
+              <p></p>
+              <div class="row">
+                 <div class="col-sm-12 col-md-5">
+                    <span></span>
+                 </div>
+                 <div class="col-sm-12 col-md-4">
+                    <span><button class="btn btn-primary" (click)="postEntity(); open = true">Save</button></span>
+                 </div>
+                 <div class="col-sm-12 col-md-3">
+                    <span></span>
+                 </div>
+              </div>
+           </clr-tab-content>
+        </clr-tab>
+        <clr-tab>
+           <button clrTabLink id="link2">Country Currency Mapping</button>
+           <clr-tab-content *clrIfActive="true">
+              <p>Country Currency Mapping data goes here</p>
+           </clr-tab-content>
+        </clr-tab>
+     </clr-tabs>
+ </ng-container>
+
+ <clr-modal [(clrModalOpen)]="open">
+ <h3 class="modal-title">Data Saved</h3>
+ <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="open = false">Ok</button>
+    <button type="button" class="btn btn-outline" (click)="open = false">Cancel</button>
+ </div>
+ </clr-modal>
